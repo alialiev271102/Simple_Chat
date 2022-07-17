@@ -29,7 +29,6 @@ const setPosts = async (post) => {
 }
 
 let posts = [];
-let currentUser = 'Anonymous'
 
 const addPage = (obj) => {
     const discussion = document.createElement('div');
@@ -42,10 +41,11 @@ getPosts();
 const button = document.querySelector('#message-input');
 button.addEventListener('submit', () => {
     const obj = {
-        user: currentUser,
+        user: document.querySelector('#user').textContent,
         content: document.querySelector('#discussion-content').value,
     }
     posts.push(obj);
     addPage(obj);
     setPosts(obj);
 })
+

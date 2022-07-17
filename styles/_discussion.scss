@@ -9,10 +9,13 @@
   padding: 10px;
   border: 1px solid black;
   overflow-wrap: break-word;
+  font-size: 16px;
 
   &-input {
     padding: 10px 20px;
     flex: 1;
+    font-size: 16px;
+    font-family: inherit;
   }
 }
 
@@ -20,7 +23,7 @@
   margin-left: 20px;
   padding: 10px 20px;
   background: blue;
-  font-size: 18px;
+  font-size: 16px;
   border: 1px solid black;
 
   &:hover{
@@ -32,7 +35,4 @@
   }
 }
 
-.message-input:invalid + .submit-btn {
-  pointer-events: none;
-  display: none;
-}
+

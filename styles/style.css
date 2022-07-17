@@ -24,6 +24,10 @@
 
 .user {
   padding-top: 10px;
+  text-decoration: none;
+  color: blue;
+  font-size: 1.17em;
+  font-weight: 700;
 }
 
 .input-field {
@@ -36,17 +40,20 @@
   padding: 10px;
   border: 1px solid black;
   overflow-wrap: break-word;
+  font-size: 16px;
 }
 .message-input {
   padding: 10px 20px;
   flex: 1;
+  font-size: 16px;
+  font-family: inherit;
 }
 
 .submit-btn {
   margin-left: 20px;
   padding: 10px 20px;
   background: blue;
-  font-size: 18px;
+  font-size: 16px;
   border: 1px solid black;
 }
 .submit-btn:hover {
@@ -54,11 +61,6 @@
 }
 .submit-btn:active {
   background: #00007a;
-}
-
-.message-input:invalid + .submit-btn {
-  pointer-events: none;
-  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
