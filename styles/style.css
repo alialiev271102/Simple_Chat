@@ -6,21 +6,59 @@
   box-sizing: border-box;
 }
 
-#create-btn {
-  padding: 20px;
+.container {
+  max-width: 1000px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  text-decoration: none;
+  color: black;
+}
+
+.user {
+  padding-top: 10px;
 }
 
 .input-field {
   display: flex;
-  justify-content: space-between;
-  max-width: 250px;
   margin: 20px 0;
 }
 
 .message {
-  margin: 10px;
+  margin: 10px 0;
   padding: 10px;
   border: 1px solid black;
+  overflow-wrap: break-word;
+}
+.message-input {
+  padding: 10px 20px;
+  flex: 1;
+}
+
+.submit-btn {
+  margin-left: 20px;
+  padding: 10px 20px;
+  background: blue;
+  font-size: 18px;
+  border: 1px solid black;
+}
+.submit-btn:hover {
+  background: #7373e8;
+}
+.submit-btn:active {
+  background: #00007a;
+}
+
+.message-input:invalid + .submit-btn {
+  pointer-events: none;
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

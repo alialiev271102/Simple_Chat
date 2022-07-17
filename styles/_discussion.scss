@@ -1,17 +1,38 @@
-#create-btn {
-  padding: 20px;
-}
 
 .input-field {
   display: flex;
-  justify-content: space-between;
-  max-width: 250px;
   margin: 20px 0;
 }
 
 .message {
-  margin: 10px;
+  margin: 10px 0;
   padding: 10px;
   border: 1px solid black;
+  overflow-wrap: break-word;
 
+  &-input {
+    padding: 10px 20px;
+    flex: 1;
+  }
+}
+
+.submit-btn {
+  margin-left: 20px;
+  padding: 10px 20px;
+  background: blue;
+  font-size: 18px;
+  border: 1px solid black;
+
+  &:hover{
+    background: #7373e8;
+  }
+
+  &:active {
+    background: #00007a;
+  }
+}
+
+.message-input:invalid + .submit-btn {
+  pointer-events: none;
+  display: none;
 }

@@ -9,29 +9,24 @@
     <title>Simple chat</title>
 </head>
 <body>
-<header>
-    <nav>
-        <a href="#">
-            <h1>Simple chat</h1>
-        </a>
-        <ul>
-            <li>My Profile</li>
-            <li>Logout</li>
-        </ul>
-    </nav>
+<header class="header container">
+    <a href="#" class="title">
+        <h1>Simple chat</h1>
+    </a>
+    <h3 id="user" class="user">Anonymous</h3>
 </header>
-<div class="discussion-block">
-    <form id="create-btn">
+<div class="discussion-block container">
+    <form id="message-input">
         <div class="input-field">
-            <label for="discussion-content">Content:</label>
-            <input type="text" id="discussion-content">
+            <input type="text" id="discussion-content" class="message-input">
+            <button type="submit" class="submit-btn">Send</button>
         </div>
-        <button type="submit">Send</button>
     </form>
     <div class="discussion-field">
 
     </div>
 </div>
 <script src="js/posts.js"></script>
+<script src="js/user.js"></script>
 </body>
 </html>

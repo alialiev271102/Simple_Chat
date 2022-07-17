@@ -7,7 +7,6 @@ const getPosts = async () => {
     posts.forEach(post => {
         addPage(post);
     })
-    console.log(posts);
 }
 const setPosts = async (post) => {
     try {
@@ -40,14 +39,13 @@ const addPage = (obj) => {
 getPosts();
 
 
-const button = document.querySelector('#create-btn');
+const button = document.querySelector('#message-input');
 button.addEventListener('submit', () => {
     const obj = {
         user: currentUser,
         content: document.querySelector('#discussion-content').value,
     }
     posts.push(obj);
-    console.log(posts);
     addPage(obj);
     setPosts(obj);
 })

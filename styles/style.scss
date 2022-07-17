@@ -6,5 +6,11 @@
   box-sizing: border-box;
 }
 
+.container {
+  max-width: 1000px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
 
+@import "header";
 @import "discussion";
